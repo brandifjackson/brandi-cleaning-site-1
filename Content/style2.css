@@ -1,0 +1,1163 @@
+/* JUST BECAUSE */
+body, html {
+height: 100%;
+margin: 0 auto;
+padding: 0;
+border: 0;
+font-size: 16px;
+font-family: sans-serif;
+line-height:1.8em;
+}
+
+@font-face {
+font-family: Tahu;
+src: url(fonts/tahu.ttf);
+}
+
+.validation-summary-errors {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.validation-summary-errors span {
+    display: block;
+    margin: 0 auto;
+}
+
+.validation-summary-errors ul{
+    margin: 0 auto;
+    padding: 0;
+    border-top: none;
+    list-style-type: none;
+}
+
+/* NAVBAR */
+#navbar {
+display: block;
+overflow: hidden;
+background-color: transparent;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 99999;
+font-family: 'Work Sans', sans-serif;
+letter-spacing: 3px;
+text-transform: uppercase;
+font-weight: 500;
+text-align: center;
+-webkit-transition: background-color 0.9s ease-in-out;
+-moz-transition: background-color 0.9s ease-in-out;
+-ms-transition: background-color 0.9s ease-in-out;
+-o-transition: background-color 0.9s ease-in-out;
+transition: background-color 0.9s ease-in-out;
+}
+
+#navbar a {
+display: inline-block;
+vertical-align: middle;
+color: white;
+text-align: center;
+padding: 20px 30px;
+text-decoration: none;
+font-size: 16px;
+transition: transform 1s; 
+}
+
+#navbar a:hover {
+color: #ffffff;
+transform: scale(1.2);
+}
+
+#navbar .icon {
+display: none;
+}
+
+
+/* SECOND NAVBAR-FOR RESPONSIVE */
+#navbar-2 {
+display: none;
+overflow: hidden;
+background-color: transparent;
+position: fixed;
+top: 0px;
+width: 100%;
+z-index: 99999;
+font-family: 'Work Sans', sans-serif;
+letter-spacing: 3px;
+text-transform: uppercase;
+font-weight: 500;
+text-align: center;
+vertical-align:middle;
+}
+
+#navbar-2 .icon{
+color: #FFFFFF;
+}
+
+#navbar-2 a {
+display: inline-block;
+vertical-align: middle;
+color: #FFFFFF;
+text-align: center;
+padding: 20px 30px;
+text-decoration: none;
+font-size: 16px;
+}
+
+#navbar-2 a:visited {color: #ffffff;}
+#navbar-2 a:hover {color: #FFFFFF;}
+#navbar-2 a:active {color: #FFFFFF;}
+#navbar-2 .icon {display: none;}
+
+
+/* PARALLAX */
+.parallax-image-1, .parallax-image-2, .parallax-image-3{
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.parallax-image-1:before, .parallax-image-2:before, .parallax-image-3:before, .parallax-image-4:before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+}
+
+.parallax-image-1 {
+background-image: url('images/cleaning76.jpg');
+height: 100vh;
+min-height: 700px;
+text-align: center;
+}
+
+.parallax-image-2{
+background-image: url('images/cleaning61.jpg');
+height: 600px;
+min-height: 100px;
+text-align: center;
+}
+
+.parallax-image-3{
+background-image: url('images/cleaning62.jpg');
+height: 400px;
+min-height: 100px;
+text-align: center;
+}
+
+/* LOGO  */
+.logo {
+display: block;
+text-align: center;
+margin: 50px auto;
+}
+
+.logo img {
+width: 458.5px;
+height: 308.5px;
+}
+
+.tagline{
+display: block;
+font-size:50px;
+color: #FFFFFF;
+padding: 30px 0; 
+font-family: 'Work Sans', sans-serif;
+font-weight: 200;
+text-shadow: 1px 1px 20px #000000; 
+line-height: 1em;
+text-transform: lowercase;
+}
+
+.logo-container{
+display: inline-block;
+vertical-align: middle;
+width: 80%
+}
+
+a.button{
+display:inline-block;
+padding:10px;
+border:0.1em solid #FFFFFF;
+margin:10px 30px;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+text-transform: uppercase;
+font-family:'Work Sans',sans-serif;
+font-size: 16px;
+font-weight:600;
+letter-spacing: 3px;
+color:#FFFFFF;
+text-align:center;
+transition: all 1s;
+width: 300px;
+}
+a.button:hover{
+color:#000000;
+background-color:#FFFFFF;
+transform: scale(1.1);
+}
+
+/* ABOUT SECTION */
+.about-container:before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+}
+
+.about-container{
+background-color: #fffcf2;
+text-align: center;
+font-family: 'Work Sans', sans-serif;
+}
+
+.about-content{
+display: inline-block;
+vertical-align: middle;
+width: 50%;
+padding:20px 0 30px 0px;
+font-size: 14px;
+}
+
+.about-content h2{
+font-size: 30px;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+a.aboutbutton{
+display:inline-block;
+padding:10px;
+border:0.1em solid black;
+margin:10px 30px;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+text-transform: uppercase;
+font-family:'Work Sans',sans-serif;
+font-size: 16px;
+font-weight:500;
+letter-spacing: 3px;
+color:black;
+text-align:center;
+transition: all 1s;
+width: 200px;
+}
+a.aboutbutton:hover{
+color: #fffcf2;
+background-color:#000000;
+transform: scale(1.1);
+}
+
+/* FIRST COLUMNED ROW */
+.first-row:after{
+content: "";
+display: table;
+clear: both;
+}
+
+.first-column {
+float: left;
+width: 33.33%;
+height: 700px;
+}
+
+.first-column-1, .first-column-2, .first-column-3{
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.first-column-1{
+width: 33.33%;
+background-image: url('images/cleaning63.jpg');
+}
+
+.first-column-2:before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+}
+
+.first-column-2{
+width: 33.33%;
+font-family:'Work Sans',sans-serif;
+background-color: #C5B263;
+text-align: center;
+}
+
+.first-column-3{
+width: 33.33%;
+background-image: url('images/cleaning64.jpg');
+}
+
+/* ADDITIONAL SERVICES */
+.additional-service{
+text-align: center;
+display: inline-block;
+vertical-align: middle;
+width: 90%;
+}
+
+
+.additional-service h2{
+font-size: 24px;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+.additional-service ul{
+list-style-type: none;
+}
+
+.additional-service li{
+display: block;
+}
+
+/* SECOND COLUMNED ROW */
+.second-column-1, .second-column-2, .second-column-3{
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.second-column-2:before, .second-column-3:before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+}
+
+.second-row:after{
+content: "";
+display: table;
+clear: both;
+}
+
+.second-column {
+float: left;
+width: 33.33%;
+min-height: 550px;
+height: 550px;
+}
+
+.second-column-1{
+background-image: url('images/cleaning70.jpg');
+width: 30%;
+}
+
+.second-column-2 {
+width:30%;
+color: 	#F8F8F8;
+background-color: #615758;
+font-family:'Work Sans',sans-serif;
+text-align: center;
+}
+
+.second-column-3{
+width: 40%;
+color: #000000;
+background-color: #B6AFA5;
+font-family:'Work Sans',sans-serif;
+text-align: center;
+}
+
+/* LOCATION SECTION */
+.location-container{
+display: inline-block;
+vertical-align: middle;
+width: 90%;
+}
+
+.location-container p{
+line-height: 20px;
+}
+
+#location-title, #location-number {
+font-size: 30px;
+color: #F8F8F8;
+text-transform: uppercase;
+}
+
+#location-number a{
+color: inherit;
+text-decoration: inherit; 
+}
+
+#location-number a:hover{
+color: inherit;
+text-decoration: underline; 
+}
+
+#location-title{
+letter-spacing: 3px;
+}
+
+
+#location-city{
+text-transform: uppercase;
+font-weight: 500;
+}
+
+/* CONTACT FORM */
+#contact-form-container{
+display: inline-block;
+vertical-align: middle;
+width: 90%;
+}
+
+#contact-form-container h2{
+font-size: 24px;
+letter-spacing: 3px;
+}
+
+#contactform{
+display: inline-block;
+text-align: center;
+}
+
+#contactform input, #contactform textarea, #contactform button{
+display: table;
+width: 300px;
+margin: 10px 0;
+padding: 10px 10px; 
+font-family: 'Work Sans', sans-seriff;
+font-weight: 400;
+}
+
+#contactform input[type=text], #contactform textarea[type=text], #contactform input[type=email], #contactform input[type=tel] {
+-webkit-transition: all 0.30s ease-in-out;
+-moz-transition: all 0.30s ease-in-out;
+-ms-transition: all 0.30s ease-in-out;
+-o-transition: all 0.30s ease-in-out;
+outline: 1px solid grey;
+border: 1px solid #e5e2de;
+background-color: #e5e2de;
+}
+
+#contactform input[type=text]:focus, #contactform textarea[type=text]:focus, #contactform input[type=email]:focus, #contactform input[type=tel]:focus {
+box-shadow: 0 0 5px #7990BC;
+border: 1px solid #7990BC;
+}
+
+#contactform textarea{
+height: 140px;
+resize: none;
+}
+
+#contactform button {
+padding: 5px 20px;
+border: 2px solid #000000;
+width: 150px;
+height: 40px;
+line-height: 30px;
+margin: 0 auto;
+border-radius: 1px;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Work Sans',sans-serif;
+font-size: 15px;
+font-weight: 600;
+text-transform: uppercase;
+background-color: #000000;
+color:#B6AFA5;
+text-align: center;
+vertical-align: middle;
+transition: all 0.5s;
+}
+
+#contactform button:hover{
+color:#B6AFA5;
+background-color:#000000;
+border:3px solid #000000;
+transform: scale(1.1);
+}
+
+#error-message {
+display: block;
+margin: 10px;
+font-size: 14px;
+color: #000000;
+}
+
+#error-quote-message {
+display: inline-block;
+font-size: 14px;
+color: red;
+}
+
+
+
+
+/* WHY CHOOSE US SECTION */
+.whychooseus-container{
+display: inline-block;
+vertical-align: middle;
+border: 5px solid #ffffff;
+width: 60%;
+text-align: center;
+font-family:'Work Sans',sans-serif;
+color: #a69992;
+background-color: 	rgba(166,153,146, 0.5);
+}
+
+.whychooseus-title{
+font-size: 50px;
+color: #ffffff;
+line-height: 1em;
+}
+
+.whychooseus-underline{
+border-bottom: 2px solid #ffffff;
+display: inline-block;
+padding-bottom: 0;
+}
+
+.whychooseus-row:after{
+content: "";
+display: table;
+clear: both;
+}
+
+.whychooseus-column {
+float: left;
+width: 33.33%;
+height: 200px;
+font-size: 16px;
+font-weight: 400;
+color: #ffffff;
+}
+
+/* TESTIMONY SECTION*/
+.testimony-container:before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+}
+
+.testimony-container{
+display: inline-block;
+vertical-align: middle;
+border: 5px solid #fbf9f3;
+width: 500px;
+text-align: center;
+font-family:'Work Sans',sans-serif;
+font-weight:500;
+color: #a69992;
+background-color: #fbf9f3;
+}
+
+.testimony{
+display: inline-block;
+vertical-align: middle;
+font-size: 16px;
+color: #473b38;
+width: 90%
+}
+
+.reviewsignature{
+font-size: 24px;
+font-family: 'Caveat', cursive;
+font-weight: 700;
+}
+
+
+/* FOOTER */
+footer {
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #2D170A;
+color: white;
+text-align: center;
+padding: 0;
+display: inline-block;
+font-family:'Work Sans',sans-serif;
+
+}
+
+.footer-container{
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+font-family:'Work Sans',sans-serif;
+color: #a69992;
+width: 60%;
+}
+
+.footer-arrow {
+display: block;
+width: 40px;
+height: 40px;
+text-align: center;
+margin: 20px auto;
+}
+
+.footer-arrow a:hover path{
+transform: translate(0, -50px);
+}
+
+.footer-header{
+font-size: 30px;
+font-family: 'Work Sans', sans-serif;
+font-weight: 400;
+color: #ffffff;
+text-transform: uppercase;
+}
+
+.footer-title{
+border-bottom: 1px solid #ffffff;
+padding: 20px 150px;
+margin: 0;
+display: block;
+}
+
+.footer-row{
+display: none;
+}
+
+.footer-row:after{
+content: "";
+display: table;
+clear: both;
+}
+
+.footer-column {
+float: left;
+width: 50%;
+height: 200px;
+font-size: 16px;
+font-weight: 400;
+color: #ffffff;
+margin: 20px 0;
+}
+
+.footer-column a{
+display: block;
+text-align: left;
+}
+
+/* SOCIAL ICONS IN FOOTER */
+.social-icon-container {
+position: relative;
+display: block;
+margin: 20px 0;
+}
+
+.social-icon-content {
+position: relative;
+}
+
+.social-icon-content a {
+color: inherit;
+text-decoration: inherit; 
+}
+
+.social-icon{
+height: 50px;
+width: 50px;
+margin: 0 5px;
+}
+
+path,
+polygon,
+circle {
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+
+
+/* Facebook */
+.fb-background {
+stroke: #3B5998;
+stroke-width: 0;
+stroke-dasharray: 0 916;
+stroke-dashoffset: -458;
+fill: transparent;
+}
+
+.fb-logo {
+fill: white;
+}
+
+.social-icon:hover .fb-background {
+stroke: #fff;
+stroke-width: 10;
+stroke-dasharray: 916;
+stroke-dashoffset: 0;
+fill: #3B5998;
+}
+
+.social-icon:hover .fb-logo {
+fill: #fff;
+}
+
+
+/* Twitter */
+.tw-background {
+stroke: #26A6D1;
+stroke-width: 0;
+stroke-dasharray: 0 916;
+stroke-dashoffset: -458;
+fill: transparent;
+}
+
+.tw-logo {
+fill: white;
+}
+
+.social-icon:hover .tw-background {
+stroke: #fff;
+stroke-width: 10;
+stroke-dasharray: 916;
+stroke-dashoffset: 0;
+fill: #26A6D1;
+}
+
+.social-icon:hover .tw-logo {
+fill: #fff;
+}
+
+/* Instagram */
+
+.in-background {
+stroke: #3F729B;
+stroke-width: 0;
+stroke-dasharray: 0 916;
+stroke-dashoffset: -458;
+fill: transparent;
+}
+
+.in-logo {
+fill: white;
+}
+
+.social-icon:hover .in-background {
+stroke: #fff;
+stroke-width: 10;
+stroke-dasharray: 916;
+stroke-dashoffset: 0;
+fill: deeppink;
+}
+
+.social-icon:hover .in-logo {
+fill: #fff;
+}
+
+.footer-link{
+color: inherit;
+text-decoration: inherit; 
+}
+
+.footer-link:hover{
+color: inherit;
+text-decoration: underline; 
+}
+
+/* GET A QUOTE PAGE */
+.parallax-image-4{
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.parallax-image-4:before{
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+} 
+
+.parallax-image-4{
+background-image: url('images/cleaning65.jpg');
+text-align: center;
+height: 100%;
+}
+
+.quote-title{
+display: inline-block;
+font-family: tahu;
+font-size: 60px;
+color: #FFFFFF;
+margin: 100px 0 50px 0;
+}
+
+.quote-container{
+display: block;
+margin: 0 auto;
+padding-bottom: 200px;
+width: 60%;
+}
+
+.quote-header{
+display: block;
+height: 200px;
+background-color: #9B8F91;
+text-align: left;
+font-family: 'Work Sans', sans-serif;
+color: #D5DADE;
+}
+
+.quote-header h4{
+margin: 0;
+padding: 40px 0 20px 40px;
+font-size: 30px;
+font-weight: 200;
+text-transform: uppercase;
+}
+
+.quote-header p{
+margin: 0;
+padding: 0px 40px 0 40px;
+font-size: 16px;
+line-height: 1.2em;
+}
+
+.quote-body{
+display: block;
+background-color: rgba(255,255,255,1); 
+}
+
+#quote-form{
+text-align: left;
+padding: 40px;
+}
+
+#quote-form label{
+display: block;
+margin: 20px 0 0 0;
+}
+
+
+#quote-form input[type="text"], #quote-form input[type="number"], #quote-form select{
+width: 300px;
+height: 25px;
+padding: 5px 0 5px 10px;
+margin:  10px 10px 0 0;
+}
+
+#quote-form select{
+height: 35px;
+}
+
+#quote-form textarea{
+height: 200px;
+width: 500px;
+resize: none;
+}
+
+#quote-form h3{
+margin: 20px 0 0 0;
+padding: 0;
+}
+
+#quote-form button{
+padding:5px 20px;
+border:3px solid #000000;
+width: 150px;
+margin: 30px 0 0 0;
+border-radius: 1px;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Work Sans',sans-serif;
+font-weight:600;
+text-transform: uppercase;
+background-color:#000000;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.5s;
+}
+#quote-form button:hover{
+color:#FFFFFF;
+background-color:#000000;
+border:3px solid #000000;
+transform: scale(1.1);
+}
+
+.required:after { 
+content:" *"; 
+color: red;
+}
+
+#quote-error-message {
+display: block;
+margin: 10px;
+font-size: 14px;
+color: red;
+}
+
+/* ABOUT US PAGE */
+.parallax-image-5{
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.parallax-image-5:before{
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+} 
+
+.parallax-image-5{
+background-image: url('images/cleaning77.jpg');
+text-align: center;
+height: 100%;
+}
+
+.about-us-title{
+display: inline-block;
+font-family: tahu;
+font-size: 60px;
+color: #FFFFFF;
+margin: 100px 0 50px 0;
+}
+
+.about-us-container{
+display: block;
+margin: 0 auto;
+padding-bottom: 200px;
+width: 80%;
+}
+
+.about-us-body{
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 50px 0 100px 0;
+background-color: rgba(255,255,255,.9); 
+}
+
+.about-us-body h2{
+font-family: 'Work Sans', sans-seriff;
+font-size: 30px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.about-us-content{
+width: 70%;
+margin: 0 auto;
+padding: 0 0 30px 0;
+}
+
+a.about-us-button{
+display:inline-block;
+padding:10px;
+border:0.1em solid black;
+margin:10px 30px;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+text-transform: uppercase;
+font-family:'Work Sans',sans-serif;
+font-size: 16px;
+font-weight:500;
+letter-spacing: 3px;
+color:black;
+text-align:center;
+transition: all 1s;
+width: 500px;
+}
+a.about-us-button:hover{
+color: #fffcf2;
+background-color:#000000;
+transform: scale(1.1);
+}
+
+/* CONFIRMATION PAGE */
+.parallax-image-6{
+position: relative;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.parallax-image-6:before{
+content: "";
+display: inline-block;
+vertical-align: middle;
+height: 100%;
+} 
+
+.parallax-image-6{
+background-image: url('images/cleaning77.jpg');
+text-align: center;
+height: 100%;
+}
+
+.confirmation-title{
+display: inline-block;
+font-family: tahu;
+font-size: 60px;
+color: #FFFFFF;
+margin: 100px 0 50px 0;
+}
+
+.confirmation-container{
+display: block;
+margin: 0 auto;
+padding-bottom: 200px;
+width: 80%;
+}
+
+.confirmation-body{
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 50px 0px 10px 0px;
+background-color: rgba(255,255,255,.9); 
+}
+
+.confirmation-body h2{
+font-family: 'Work Sans', sans-seriff;
+font-size: 30px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+.confirmation-content{
+width: 70%;
+margin: 0 auto;
+padding: 0 0 30px 0;
+}
+
+a.confirmation-button{
+display:inline-block;
+padding:10px;
+border:0.1em solid black;
+margin:10px 30px;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+text-transform: uppercase;
+font-family:'Work Sans',sans-serif;
+font-size: 16px;
+font-weight:500;
+letter-spacing: 3px;
+color:black;
+text-align:center;
+transition: all 1s;
+width: 500px;
+}
+a.confirmation-button:hover{
+color: #fffcf2;
+background-color:#000000;
+transform: scale(1.1);
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1000px) {
+#navbar {display: none;}
+#navbar-2 {display: block; position: absolute; }
+#navbar-2 a {display: none;}
+#navbar-2 a.icon {
+float: right;
+display: block;
+position: relative;
+}
+#navbar-2.responsive {position: relative;}
+#navbar-2.responsive a.icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+#navbar-2.responsive a {
+float: none;
+display: block;
+text-align: left;
+background-color: #8f7f76;
+padding: 10px 20px;
+}
+.first-column-1, .first-column-3{display: none;}
+.first-column-2{width: 100%;}
+.second-column-1{display: none;}
+.second-column-2, .second-column-3{width: 100%;}
+.parallax-image-2{height: 1000px;}
+.testimony-container{width: 90%;}
+
+/*wcu*/
+.whychooseus-container{width: 90%;}
+.whychooseus-column{display: block;width: 95%;}	
+.footer-column{display: block;width: 100%;}
+.tagline{font-size: 25px;font-weight: 300;padding:10px 0;}
+.logo {width: 95%;height: 40%}
+.about-content{width: 90%; line-height: 1.6em;}
+a.button{
+display:inline-block;
+padding: 5px 20px;
+font-size: 14px;
+font-weight:600;
+transition: all 1s;
+width: 60%;
+min-width: 200px;
+}
+#quote-form input[type="text"], #quote-form select, #quote-form textarea{
+width: 100%;
+margin-right: 100px;}
+.quote-header{height: auto;}
+.quote-header p{padding-bottom: 60px;}
+.quote-container{width: 90%;}
+.about-us-container{width: 90%;}
+.about-us-content{width: 90%;}
+.about-us-body{font-size: 14px;line-height: 1.2em;}
+.about-us-title{margin: 50px 0 25px 0; line-height: 1.8em;}
+
+/*END*/
+}
+/*END*/
+
+
+/*SMART PHONE*/
+@media screen and (max-width: 600px) {
+
+.whychooseus-title{font-size: 30px;}
+.footer-header{font-size: 30px;}
+.footer-title{padding: 0 50px;}
+.tagline{font-size: 20px;}
+.logo img {width: 90%; height: 90%;}
+.parallax-image-1{max-height: 600px;min-height: 200px;}
+#contactform-form-container {width: 100%;}
+#contactform {width: 90%; display: block;}
+#contactform input, #contactform textarea{width: 100%; margin: 10px auto; }
+#contactform button {width: 225px; margin: 0 auto;}
+.quote-title{margin: 50px 0 25px 0; line-height: 1.8em;}
+a.aboutbutton{display:block; margin: 0 auto;}
+a.about-us-button{width: 80%;}
+a.button{
+display:inline-block;
+margin:5px auto;
+width: 70%;
+}
+
+/*END*/
+}
+/*END*/
+
+
+
+
+
+
+
+
+
+
+

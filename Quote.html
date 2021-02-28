@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Quote</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Commercial and Residential Cleaning Service for the Augusta-Aiken area.">
+    <meta name="keywords" content="commercial, residential, cleaning, service, augusta, aiken">
+    <meta name="format-detection" content="1-706-664-9998">
+
+    <link rel='icon' href='Content/logos/bubbles_favicon.png' type='image/x-icon'>
+    <link rel="stylesheet" type="text/css" href="Content/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <!--- NAVIGATION MENU --->
+    <nav>
+        <div id="navbar" class="mobile-navbar">
+            <a class="link" href="index.html#home">Home</a>
+            <a class="link" href="About.html">About Us</a>
+            <a class="link" href="index.html#services">Our Services</a>
+            <a class="link" href="Quote.html">Get A Quote</a>
+            <a class="link" href="index.html#contactus">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+    <nav>
+        <div id="navbar-2" class="mobile-navbar-2">
+            <a class="link" href="index.html#home">Home</a>
+            <a class="link" href="About.html">About Us</a>
+            <a class="link" href="index.html#services">Our Services</a>
+            <a class="link" href="Quote.html">Get A Quote</a>
+            <a class="link" href="index.html#contactus">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+
+    <!--- MAIN --->
+    <main>
+
+				<!---------- PARALLAX ONE ----------->
+				<div class="parallax-image-4">
+					<div class="quote-title"><h2>Get a Quote</h2></div>
+					<div class="quote-container">
+						<div class="quote-body">
+							<div class="quote-header">
+								<h4>Request A Quote</h4>
+								<p>
+									Request a quote today by filling out our form wiht as much detail as possible.
+									Please note that our estimated quote may change upon arrival due if not accurately described.
+								</p>
+							</div>
+
+							<form name="quoteform" id="quote-form" class="validate" method="post" action="">
+								<div id="error-quote-message"></div>
+								<div>
+									<label class="required" id="label_name">Name</label>
+									<div>
+										<input type="text" name="firstname" placeholder="First"  required>
+										<input type="text" name="lastname" placeholder="Last"  required>
+									</div>
+								</div>
+								<div>
+									<label class="required" id="label_qemail">Email</label>
+									<div class="">
+										<input type="text" name="qemail" placeholder="john@doe.com" required>
+									</div>
+								</div>
+
+								<div>
+									<label class="required" id="label_qnumber">Phone</label>
+									<div class="">
+										<input type="text" name="qnumber" placeholder="###-###-####" required>
+									</div>
+								</div>
+								<div>
+									<label class="required" id="label_address">Address</label>
+									<div>
+										<input type="text" name="address1" placeholder="Street Address" required>
+										<input type="text" name="address2" placeholder="Street Address Line 2">
+										<div>
+											<input type="text" name="city" placeholder="City" required >
+											<select name="state"  required>
+												<option value="">State</option>
+												<option value="GA">GA</option>
+												<option value="SC">SC</option>
+											</select>
+											<input type="text" name="zipcode" placeholder="Zip Code"  required>
+										</div>
+									</div>
+								</div>
+								<div>
+									<label id="label_traffic">How did you hear about us?</label>
+									<div>
+										<input type="radio" name="traffic" value="friend">Friend or Family<br>
+										<input type="radio" name="traffic" value="social media">Social Media<br>
+										<input type="radio" name="traffic" value="outdoor sign">Outdoor Sign<br>
+										<input type="radio" name="traffic" value="brochure">Brochure or Business Card<br>
+										<input type="radio" name="traffic" value="home advisor">Home Advisor<br>
+										<input type="radio" name="traffic" value="other">Other
+									</div>
+								</div>
+								<div>
+									<h3>Describe Your Home</h3>
+									<div>
+										<label class="required" id="label_hometype">Type of Home</label>
+										<select name="hometype" required>
+											<option value="">Select</option>
+											<option value="Single Family Home">Single Family Home</option>
+											<option value="Duplex">Duplex</option>
+											<option value="Condo">Condo</option>
+											<option value="Loft">Loft</option>
+											<option value="Apartment">Apartment</option>
+											<option value="Townhome">Townhome</option>
+											<option value="Commercial">Commercial</option>
+											<option value="Apartment">Apartment</option>
+											<option value="Commercial">Commercial</option>
+											<option value="Office">Office</option>
+											<option value="Other">Other</option>
+										</select>
+									</div>
+									<div>
+										<label id="label_buildingname">Building or Complex Name (If applicable)</label>
+										<input type="text" name="buildingname" placeholder="" >
+									</div>
+									<div>
+										<label id="label_propertyage">Age of Property</label>
+										<input type="text" name="propertyage" placeholder="" >
+									</div>
+									<div>
+										<label id="label_squarefootage">Square Footage</label>
+										<input type="text" name="squarefootage" placeholder="" >
+									</div>
+									<div>
+										<label class="required" id="label_bedroomcount">Number of Bedrooms</label>
+										<input type="number" name="bedroomcount" placeholder=""  min="1" required>
+									</div>
+									<div>
+										<label class="required" id="label_bathroomcount">Number of Bathrooms</label>
+										<input type="number" name="bathroomcount" placeholder=""  min="1" required>
+									</div>
+									<div>
+										<label class="required" id="label_homelevels">Number of Levels in Home</label>
+										<input type="number" name="homelevels" placeholder=""  min="1" required>
+									</div>
+									<div>
+										<label id="label_room">Rooms to be Cleaned</label>
+										<input type="checkbox" name="room" value="Kitchen">Kitchen<br>
+										<input type="checkbox" name="room" value="Dining Room">Dining Room<br>
+										<input type="checkbox" name="room" value="Den/Office">Den/Office<br>
+										<input type="checkbox" name="room" value="Living Room">Living Room<br>
+										<input type="checkbox" name="room" value="Family Room">Family Room<br>
+										<input type="checkbox" name="room" value="Sunroom">Sunroom<br>
+										<input type="checkbox" name="room" value="Basement">Basement<br>
+									</div>
+									<div>
+										<label id="label_pets">Do you have any pets?</label>
+										<input type="radio" name="pets" value="Yes">Yes<br>
+										<input type="radio" name="pets" value="No">No
+									</div>
+									<div>
+										<label id="label_pettype">If yes, what types and how many?</label>
+										<input type="text" name="pettype" placeholder="">
+									</div>
+								</div>
+
+								<div>
+									<h3>Services</h3>
+									<div>
+										<label id="label_lastcleaning">How long has it been since your last professional cleaning?</label>
+										<input type="text" name="lastcleaning" placeholder="" >
+									</div>
+									<div>
+										<label class="required" id="label_homecondition">Condition of Home</label>
+										<select name="homecondition" required>
+											<option value="" select="selected">Select</option>
+											<option value="Very Clean">Very Clean</option>
+											<option value="Clean">Clean</option>
+											<option value="Average">Average</option>
+											<option value="Dirty">Dirty</option>
+											<option value="Very Dirty">Very Dirty</option>
+										</select>
+									</div>
+									<div>
+										<label class="required" id="label_service">What services are you interested in?</label>
+										<input type="checkbox" name="service" value="Regular Service">Regular Service<br>
+										<input type="checkbox" name="service" value="One-Time Deep Clean">One-Time Deep Clean<br>
+										<input type="checkbox" name="service" value="Move-In/Move-Out Deep Cleaning">Move-In/Move-Out Deep Cleaning<br>
+										<input type="checkbox" name="service" value="Interior Kitchen Appliance Cleanings">Interior Kitchen Appliance Cleanings<br>
+										<input type="checkbox" name="service" value="Interior Window Cleaning">Interior Window Cleaning<br>
+										<input type="checkbox" name="service" value="Patio Cleaning">Patio Cleaning<br>
+									</div>
+									<div>
+										<label class="required" id="label_frequency">What Frequency of Service Would You Like?</label>
+										<input type="radio" name="frequency" value="Weekly">Weekly<br>
+										<input type="radio" name="frequency" value="Bi-Weekly">Bi-Weekly<br>
+										<input type="radio" name="frequency" value="Monthly">Monthly<br>
+										<input type="radio" name="frequency" value="One-Time">One-Time<br>
+										<input type="radio" name="frequency" value="Other">Other
+									</div>
+									<div>
+									<label id="label_preferreddate">Preferred date of request?</label>
+									<input type="date" name="preferreddate" >
+								</div>
+									<div>
+										<label id="label_problemareas">Any problem areas we should know about? Any other request you would like?</label>
+										<textarea name="problemareas" ></textarea>
+									</div>
+								</div>
+
+								<button onclick="return validateQuoteform()" type="submit" value="submit">Submit</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<!-------- PARALLAX THREE --------->
+				<div class="parallax-image-3">
+					<div class="testimony-container">
+						<div class="testimony">
+							<p>"This was a great experience from the beginning to the end. The customer service is outstanding and the quality of their workmanship is matchless. Thank you JWJ Cleaning, LLC!"</p>
+							<p class="reviewsignature">Janice D.</p>
+							<p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+						</div>
+					</div>
+				</div>
+
+
+        <!-- END MAIN -->
+    </main>
+
+    <!------------ FOOTER --------------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-header">
+                <div class="footer-arrow">
+                    <a href="#home" id="scroll-to-top">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="100%" height="100%"
+                             viewBox="0 0 284.929 284.929"
+                             xml:space="preserve"
+                             style="fill:#fbf9f3;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                        <g>
+                        <path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285
+						C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854
+						c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848
+						c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566
+						C284.929,199.378,283.984,197.188,282.082,195.285z" />
+						</g>
+						</svg>
+                    </a>
+                </div>
+                <span class="footer-title">Back To Top</span>
+            </div>
+
+        </div>
+
+
+        <div class="social-icon-container">
+            <div class="social-icon-content">
+                <!--       Facebook -->
+                <a href="https://www.facebook.com/Debbys-Cleaning-192285774915162/">
+                    <svg class="social-icon" viewBox="-5 -5 300 300">
+                        <g>
+                            <path class="fb-background" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z" />
+                            <path class="fb-logo" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+					C154.791,104.556,158.341,100.277,163.394,100.277z" />
+                        </g>
+                    </svg>
+                </a>
+
+                <!--       Twitter -->
+                <a href="https://twitter.com/debbyscleaning">
+                    <svg class="social-icon" viewBox="-5 -5 300 300">
+                        <g>
+                            <path class="tw-background" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+					S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z" />
+                            <path class="tw-logo" d="M236.724,98.129c-6.363,2.749-13.21,4.597-20.392,5.435c7.338-4.27,12.964-11.016,15.613-19.072
+					c-6.864,3.96-14.457,6.828-22.55,8.366c-6.473-6.691-15.695-10.87-25.909-10.87c-19.591,0-35.486,15.413-35.486,34.439
+					c0,2.704,0.31,5.335,0.919,7.857c-29.496-1.438-55.66-15.158-73.157-35.996c-3.059,5.089-4.807,10.997-4.807,17.315
+					c0,11.944,6.263,22.504,15.786,28.668c-5.826-0.182-11.289-1.721-16.086-4.315v0.437c0,16.696,12.235,30.616,28.476,33.784
+					c-2.977,0.783-6.109,1.211-9.35,1.211c-2.285,0-4.506-0.209-6.673-0.619c4.515,13.692,17.625,23.651,33.165,23.925
+					c-12.153,9.249-27.457,14.748-44.089,14.748c-2.868,0-5.69-0.164-8.476-0.482c15.722,9.777,34.367,15.485,54.422,15.485
+					c65.292,0,100.997-52.51,100.997-98.029l-0.1-4.461C225.945,111.111,231.963,105.048,236.724,98.129z" />
+                        </g>
+                    </svg>
+                </a>
+
+                <!--     Instagram -->
+                <a href="https://www.instagram.com/debbyscleaning">
+                    <svg class="social-icon" viewBox="-5 -5 300 300">
+                        <g>
+                            <path class="in-background" d="M145.659,0c80.44,0,145.66,65.219,145.66,145.66S226.1,291.319,145.66,291.319S0,226.1,0,145.66
+					S65.21,0,145.659,0z" />
+                            <path class="in-logo" d="M195.93,63.708H95.38c-17.47,0-31.672,14.211-31.672,31.672v100.56
+					c0,17.47,14.211,31.672,31.672,31.672h100.56c17.47,0,31.672-14.211,31.672-31.672V95.38
+					C227.611,77.919,213.4,63.708,195.93,63.708z M205.908,82.034l3.587-0.009v27.202l-27.402,0.091l-0.091-27.202
+					C182.002,82.116,205.908,82.034,205.908,82.034z M145.66,118.239c22.732,0,27.42,21.339,27.42,27.429
+					c0,15.103-12.308,27.411-27.42,27.411c-15.121,0-27.42-12.308-27.42-27.411C118.23,139.578,122.928,118.239,145.66,118.239z
+					M209.65,193.955c0,8.658-7.037,15.704-15.713,15.704H97.073c-8.667,0-15.713-7.037-15.713-15.704v-66.539h22.759
+					c-2.112,5.198-3.305,12.299-3.305,18.253c0,24.708,20.101,44.818,44.818,44.818s44.808-20.11,44.808-44.818
+					c0-5.954-1.193-13.055-3.296-18.253h22.486v66.539L209.65,193.955z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="footer-copyright">
+            <p>
+                &copy; Debby's Cleaning Service All rights reserved. View our <a class="footer-link" href="Content/documents/TermsOfService.pdf">Terms of Service</a>.<br>
+                Website Designed by <a class="footer-link" href="tel:+1-706-691-8361">Brandi Jackson</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.footer-arrow, .about-content h2, .about-content p, .aboutbutton, .additional-service h2, .additional-service p, #location-title, #location-city, #location-address, #location-hours, #location-number, #location-image, #contact-form-container h2, #contactform, .whychooseus-container, .testimony-container');
+
+    </script>
+    <script type="text/javascript" src="Scripts/script3.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+</body>
+</html>
+
+
+
+
